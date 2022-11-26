@@ -10,16 +10,17 @@ class Livro extends Model
     use HasFactory;
 
     protected $fillable = [
+        'id',
         'titulo',
         'autor',
         'edicao',
         'ano',
-        'n_paginas',
+        'paginas',
         'idioma',
         'editora',
-        'data_pblicacao',
-        'descricao',
+        'dataPublicacao',
         'image',
-        'link_compra'
+        'linkCompra',
+        'descricao'
     ];
 }

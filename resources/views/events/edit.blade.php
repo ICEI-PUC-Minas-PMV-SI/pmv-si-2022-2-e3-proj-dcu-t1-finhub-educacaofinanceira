@@ -39,6 +39,14 @@
     <label for="inputDataPubli" class="form-label">Data Publicação:*</label>
     <input type="text" class="form-control" id="inputDataPubli"placeholder="25/09/2010">
   </div>
+  <div class="col-md-6">
+    <label for="inputImagem" class="form-label">Imagem:*</label>
+    <input type="text" class="form-control" id="inputImagem" placeholder="Foto da capa">
+  </div>
+  <div class="col-md-6">
+    <label for="inputLink" class="form-label">Link:*</label>
+    <input type="text" class="form-control" id="inputLink" placeholder="Link de compra">
+  </div>
   <div class="col-md-12">
     <label for="inputDescricao" class="form-label">Descrição:*</label>
     <input type="text" class="form-control" id="inputDescricao"placeholder="">

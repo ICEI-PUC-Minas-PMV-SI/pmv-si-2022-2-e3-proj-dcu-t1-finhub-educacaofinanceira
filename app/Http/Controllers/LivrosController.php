@@ -23,16 +23,17 @@ class LivrosController extends Controller
     {
         $livro = new Livro;
 
-        $livro->titulo =           $request->titulo;
-        $livro->autor =            $request->autor;
-        $livro->edicao =           $request->edicao;
-        $livro->ano =              $request->ano;
-        $livro->n_paginas =        $request->n_paginas;
-        $livro->idioma =           $request->idioma;
-        $livro->editora =          $request->editora;
-        $livro->data_publicacao =   $request->data_publicacao;
-        $livro->descricao =        $request->descricao;
-        $livro->link_compra =      $request->link_compra;
+        $livro->titulo =         $request->titulo;
+        $livro->autor =          $request->autor;
+        $livro->edicao =         $request->edicao;
+        $livro->ano =            $request->ano;
+        $livro->paginas =        $request->paginas;
+        $livro->idioma =         $request->idioma;
+        $livro->editora =        $request->editora;
+        $livro->dataPublicacao = $request->dataPublicacao;
+        $livro->image =         $request->image;
+        $livro->linkCompra =     $request->linkCompra;
+        $livro->descricao =      $request->descricao;
 
         if($request->hasFile('image') && $request->file('image')->isValid())
         {

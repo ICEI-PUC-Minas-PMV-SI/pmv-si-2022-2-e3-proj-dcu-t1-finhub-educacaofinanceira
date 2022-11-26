@@ -6,7 +6,7 @@
 
 <h1>Livros </h1>
 
-<a class="btn btn-outline-secondary" href="/livros/novo">Adicionar Livros</a>
+<a class="btn btn-outline-secondary" href="/livros/cadastrar">Adicionar Livros</a>
 
 <div class="row row-cols-1 row-cols-md-3 g-3">
   <div class="col">

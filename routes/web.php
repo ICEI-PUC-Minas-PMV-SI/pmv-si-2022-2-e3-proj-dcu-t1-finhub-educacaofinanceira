@@ -28,8 +28,8 @@ Route::get('/livros/01', function () {
 
 
 Route::get('/livros', [LivrosController::class, 'index']);
-Route::get('/livros/novo', [LivrosController::class, 'create']);
-Route::post('/livros/novo', [LivrosController::class, 'store'])->name('criar_livro');
+Route::get('/livros/cadastrar', [LivrosController::class, 'create']);
+Route::post('/livros/cadastrar', [LivrosController::class, 'store'])->name('criar_livro');
 Route::get('/livros/{id}', [LivrosController::class, 'show']);
 Route::get('/livros/editar/{id}', [LivrosController::class, 'edit']);
 Route::post('/livros/editar/{id}', [LivrosController::class, 'update'])->name('editar_livro');
