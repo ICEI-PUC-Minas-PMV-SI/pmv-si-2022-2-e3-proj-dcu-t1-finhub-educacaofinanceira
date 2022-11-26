@@ -22,6 +22,10 @@ Route::get('/', function () {
     return view('events.home');
 });
 
+Route::get('/livros/01', function () {
+    return view('events.show');
+});
+
 
 Route::get('/livros', [LivrosController::class, 'index']);
 Route::get('/livros/novo', [LivrosController::class, 'create']);
