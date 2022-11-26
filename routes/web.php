@@ -23,7 +23,7 @@ Route::get('/', function () {
 });
 
 Route::get('/livros', function () {
-    return view('events.livros');
+    return view('events.showAll');
 });
 
 Route::get('/livros/novo', [LivrosController::class, 'create']);
