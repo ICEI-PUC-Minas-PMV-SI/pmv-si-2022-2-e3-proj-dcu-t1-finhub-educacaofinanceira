@@ -10,9 +10,9 @@ class LivrosController extends Controller
 {
     public function index()
     {
-        // $livros = Livro::all();
-        // return view('events.showAll', ['livros' => $livros]); // ajustar o nome da view que exibe todos dados
-        return view('events.showAll');
+        $livros = Livro::all();
+        return view('events.showAll', ['livros' => $livros]); // ajustar o nome da view que exibe todos dados
+        
     }
     public function create()
     {
@@ -47,23 +47,7 @@ class LivrosController extends Controller
         }
 
         $livro->save();
-        return redirect('/')->with('msg', 'Livro cadastrado com sucesso!'); // colocar falsh messagem na página de criar
-
-        // Livro::create([
-        //     'titulo' => $request->titulo,
-        //     'autor' => $request->autor,
-        //     'edicao' => $request->edicao,
-        //     'ano' => $request->ano,
-        //     'n_paginas' => $request->n_paginas,
-        //     'idioma' => $request->idioma,
-        //     'editora' => $request->editora,
-        //     'data_publicacao' => $request->data_publicacao,
-        //     'descricao' => $request->descricao,
-        //     'image' => $request->image,
-        //     'link_compra' => $request->link_compra,
-        // ]);
-
-        // return "Livro criado com sucesso!"; //colocar isso em uma mesagem
+        return redirect('/livros')->with('msg', 'Livro cadastrado com sucesso!'); // colocar falsh messagem na página de criar
     }
 
     public function show($id)

@@ -6,7 +6,7 @@
 
 <h1>Cadastrar Livros </h1>
 
-<form action="/livros/cadastrar" method="post"class="row g-3">
+<form action="/livros/cadastrar" method="post"class="row g-3" enctype="mutpart/form-data">
     @csrf
   <div class="col-md-6">
     <label for="inputTitulo" class="form-label">Titulo: <abbr title="Campo Obrigatório">*</abbr></label>
@@ -42,9 +42,9 @@
   </div>
   <div class="col-md-6">
     <label for="inputImagem" class="form-label">Imagem:*</label>
-    <input type="text" name="image" class="form-control" id="inputImage" placeholder="Foto da capa">
+    <input type="file" accept=".jpg,.png,.jpeg" name="image" class="form-control" id="inputImage" placeholder="Foto da capa">
   </div>
-  <div class="col-md-5">
+  <div class="col-md-6">
     <label for="inputLink" class="form-label">Link:*</label>
     <input type="text" name="linkCompra" class="form-control" id="inputLink" placeholder="Link de compra">
   </div>
