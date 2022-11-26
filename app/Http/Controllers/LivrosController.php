@@ -10,8 +10,9 @@ class LivrosController extends Controller
 {
     public function index()
     {
-        $livros = Livro::all();
-        return view('events.showAll', ['livros' => $livros]); // ajustar o nome da view que exibe todos dados
+        // $livros = Livro::all();
+        // return view('events.showAll', ['livros' => $livros]); // ajustar o nome da view que exibe todos dados
+        return view('events.showAll');
     }
     public function create()
     {
