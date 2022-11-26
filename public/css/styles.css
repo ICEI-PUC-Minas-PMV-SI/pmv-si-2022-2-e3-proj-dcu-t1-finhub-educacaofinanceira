@@ -1,9 +1,13 @@
-html {
-  margin: 1%;
+html, body {
+  margin: 1%;  
+  background-color: #f1f1f1;
 }
 
 footer {
   text-align: center;
+}
+nav {
+  height: 80px;
 }
 
 .navbar-nav {
@@ -14,9 +18,11 @@ footer {
 .navbar-brand {
   margin-left: 2%;
 }
-
-#home {
-  max-width:500px;
+#homeContainer {
+  margin-top: 5%;
+}
+#homeImage {
+  max-width:400px;
   width: auto;
   height: auto;
 }

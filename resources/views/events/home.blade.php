@@ -4,7 +4,7 @@
 
 @section('content')
 
-  <div class="container">
+  <div class="container" id="homeContainer">
     <div class="row align-items-center">
 
       <div class="col">
@@ -14,7 +14,7 @@
       </div>
 
       <div class="col">
-        <img src="images/home.png" id="home">
+        <img src="images/home.png" id="homeImage">
       </div>
     </div>
   </div>

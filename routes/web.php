@@ -22,6 +22,10 @@ Route::get('/', function () {
     return view('events.home');
 });
 
+Route::get('/livros', function () {
+    return view('events.livros');
+});
+
 Route::get('/livros/novo', [LivrosController::class, 'create']);
 Route::post('/livros/novo', [LivrosController::class, 'store'])->name('criar_livro');
 Route::get('/livros/{id}', [LivrosController::class, 'show']);
