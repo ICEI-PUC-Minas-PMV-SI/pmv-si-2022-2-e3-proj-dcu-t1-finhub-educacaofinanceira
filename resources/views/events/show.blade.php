@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Editando livro: '.$livro->titulo)
+@section('title', 'Livro: '.$livro->titulo)
 
 @section('content')
 <div class="container-show">

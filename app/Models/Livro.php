@@ -18,7 +18,6 @@ class Livro extends Model
         'paginas',
         'idioma',
         'editora',
-        'dataPublicacao',
         'image',
         'linkCompra',
         'descricao'

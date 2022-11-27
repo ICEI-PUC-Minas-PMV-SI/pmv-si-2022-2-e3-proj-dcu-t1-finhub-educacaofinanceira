@@ -7,7 +7,9 @@
 <h1>Livros </h1>
 
 <a class="btn btn-outline-secondary btn-action" href="/livros/cadastrar">Adicionar Livros</a>
-
+<br>
+<br>
+<br>
 <div class="row row-cols-1 row-cols-md-3 g-3">
   @foreach($livros as $livro)
   <div class="col">

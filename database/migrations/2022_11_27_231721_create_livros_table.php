@@ -23,7 +23,6 @@ return new class extends Migration
             $table->string('paginas');
             $table->string('idioma');
             $table->string('editora');
-            $table->string('dataPublicacao');
             $table->string('image');
             $table->string('linkCompra');
             $table->string('descricao');

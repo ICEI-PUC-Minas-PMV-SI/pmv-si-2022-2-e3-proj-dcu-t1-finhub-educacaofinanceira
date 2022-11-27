@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Livros')
+@section('title', 'Livro: '.$livro->titulo)
 
 @section('content')
 
@@ -11,48 +11,43 @@
     @method('PUT')
   <div class="col-md-6">
     <label for="inputTitulo" class="form-label">Titulo: <abbr title="Campo Obrigatório">*</abbr></label>
-    <input type="text" name="titulo" class="form-control" id="inputTitulo" placeholder="Titulo do Livro" value="{{ $livro->titulo}}" required>
+    <input type="text" name="titulo" class="form-control" id="inputTitulo" value="{{ $livro->titulo}}" required>
   </div>
-  <div class="col-md-5">
+  <div class="col-md-6">
     <label for="inputAutor" class="form-label">Autor(a):*</label>
-    <input type="text" name="autor" class="form-control" id="inputAutor" placeholder="Autor do Livro" value="{{ $livro->autor}}" required>
+    <input type="text" name="autor" class="form-control" id="inputAutor" value="{{ $livro->autor}}" required>
   </div>
-  <div class="col-md-1">
+  <div class="col-md-2">
     <label for="inputEdicao" class="form-label">Edição:*</label>
-    <input type="number" name="edicao" class="form-control" id="inputAEdicao" placeholder="" value="{{ $livro->edicao}}" required>
+    <input type="number" name="edicao" class="form-control" id="inputAEdicao" value="{{ $livro->edicao}}" required>
   </div>
   <div class="col-md-2">
     <label for="inputAno" class="form-label">Ano</label>
-    <input type="number" name="ano" class="form-control" id="inputAno" placeholder="2010" value="{{ $livro->ano}}" required>
+    <input type="number" name="ano" class="form-control" id="inputAno" value="{{ $livro->ano}}" required>
   </div>
   <div class="col-2">
     <label for="inputPaginas" class="form-label">N° Páginas:*</label>
-    <input type="number" name="paginas" class="form-control" id="inputPaginas" placeholder="630" value="{{ $livro->paginas}}" required>
+    <input type="number" name="paginas" class="form-control" id="inputPaginas" value="{{ $livro->paginas}}" required>
   </div>
   <div class="col-md-3">
     <label for="inputCIdioma" class="form-label">Idioma:*</label>
-    <input type="text" name="idioma" class="form-control" id="inputIdioma" placeholder="Português" value="{{ $livro->idioma}}" required>
+    <input type="text" name="idioma" class="form-control" id="inputIdioma" value="{{ $livro->idioma}}" required>
   </div>
   <div class="col-md-3">
     <label for="inputEditora" class="form-label">Editora:*</label>
-    <input type="text" name="editora" class="form-control" id="inputEditora" placeholder="Editora" value="{{ $livro->editora}}" required>
-  </div>
-  <div class="col-md-2">
-    <label for="inputDataPubli" class="form-label">Data Publicação:*</label>
-    <input type="text" name="dataPublicacao" class="form-control" id="inputDataPubli"placeholder="25/09/2010" value="{{ $livro->dataPublicacao}}" required>
+    <input type="text" name="editora" class="form-control" id="inputEditora" value="{{ $livro->editora}}" required>
   </div>
   <div class="col-md-6">
     <label for="inputImagem" class="form-label">Imagem:*</label>
-    <input type="file" accept="image/*" name="image" class="form-control" id="inputImage" placeholder="Foto da capa">
-    <img src="/images/{{ $livro->image }}" alt="{{ $livro->titulo }}" class="img-preview">
+    <input type="file" accept="image/*" name="image" class="form-control" id="inputImage" >
   </div>
   <div class="col-md-6">
     <label for="inputLink" class="form-label">Link:*</label>
-    <input type="text" name="linkCompra" class="form-control" id="inputLink" placeholder="Link de compra" value="{{ $livro->linkCompra}}" required>
+    <input type="text" name="linkCompra" class="form-control" id="inputLink" value="{{ $livro->linkCompra}}" required>
   </div>
   <div class="col-md-12">
     <label for="inputDescricao" class="form-label">Descrição:*</label>
-    <input type="text" name="descricao" class="form-control" id="inputDescricao"placeholder="" value="{{ $livro->descricao}}" required>
+    <input type="text" name="descricao" class="form-control" id="inputDescricao"value="{{ $livro->descricao}}" required>
   </div>
   <div class="col-12">
     <button type="submit" class="btn btn-outline-secondary">Salvar</button>

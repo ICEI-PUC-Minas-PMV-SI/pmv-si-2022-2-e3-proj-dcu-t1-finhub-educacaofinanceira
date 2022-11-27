@@ -30,7 +30,6 @@ class LivrosController extends Controller
         $livro->paginas =        $request->paginas;
         $livro->idioma =         $request->idioma;
         $livro->editora =        $request->editora;
-        $livro->dataPublicacao = $request->dataPublicacao;
         $livro->image =          $request->image;
         $livro->linkCompra =     $request->linkCompra;
         $livro->descricao =      $request->descricao;
