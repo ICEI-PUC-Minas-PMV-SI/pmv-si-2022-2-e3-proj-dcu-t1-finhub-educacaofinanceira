@@ -14,10 +14,6 @@ use App\Http\Controllers\LivrosController;
 |
 */
 
-Route::get('/laravel', function () {
-    return view('welcome');
-});
-
 Route::get('/', function () {
     return view('events.home');
 });
@@ -29,9 +25,9 @@ Route::get('/livros/01', function () {
 
 Route::get('/livros', [LivrosController::class, 'index']);
 Route::get('/livros/cadastrar', [LivrosController::class, 'create']);
-Route::post('/livros/cadastrar', [LivrosController::class, 'store'])->name('criar_livro');
+Route::post('/livros/cadastrar', [LivrosController::class, 'store']);
 Route::get('/livros/{id}', [LivrosController::class, 'show']);
 Route::get('/livros/editar/{id}', [LivrosController::class, 'edit']);
-Route::post('/livros/editar/{id}', [LivrosController::class, 'update'])->name('editar_livro');
-Route::get('/livros/excluir/{id}', [LivrosController::class, 'delete']);
-Route::post('/livros/excluir/{id}', [LivrosController::class, 'destroy'])->name('excluir_livro');
+Route::put('/livros/editar/{id}', [LivrosController::class, 'update']);
+// Route::get('/livros/{id}', [LivrosController::class, 'delete']);
+Route::delete('/livros/{id}', [LivrosController::class, 'destroy']);

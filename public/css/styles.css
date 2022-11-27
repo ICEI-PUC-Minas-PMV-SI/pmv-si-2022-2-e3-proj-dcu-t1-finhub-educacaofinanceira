@@ -26,6 +26,20 @@ nav {
   width: auto;
   height: auto;
 }
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.container-show {
+  margin-top: 2%;
+  
+}
+
+.btn-action {
+  float: right;
+  margin-right: 1%;
+}
 
 /* Estrelas */
 .estrelas{text-align: center; padding-top: 50px}
@@ -42,26 +56,4 @@ nav {
 }
 .estrelas input[type=radio]:checked ~ label i.fa:before {
   color: #CCC;
-}
-
-
-.image {
-  /* background-size: cover !important; */
-  width: 100%;
-  height: auto;
-}
-
-.container-show {
-  margin-top: 2%;
-  
-}
-
-.btn-action {
-  float: right;
-  margin-right: 1%;
-}
-
-/* SHOW */
-#title {
-  text-align: center;
 }
