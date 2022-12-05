@@ -3,9 +3,9 @@
 @section('title', 'Livros')
 
 @section('content')
-
-<h1>Cadastrar Livros </h1>
-
+<br>
+<h1 class="titulo-pag">Cadastrar Livros </h1>
+<br>
 <form action="/livros/cadastrar" method="POST" class="row g-3" enctype="multipart/form-data">
     @csrf
   <div class="col-md-6">

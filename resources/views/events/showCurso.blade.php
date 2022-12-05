@@ -1,12 +1,12 @@
 @extends('layouts.main')
 
-@section('title', 'Livro: '.$livro->titulo)
+@section('title', 'Curso: '.$curso->nome)
 
 @section('content')
 <div class="container-show">
 
-  <a class="btn btn-outline-secondary btn-action" href="/livros/editar/{{ $livro->id }}">Editar</a>
-  <form action="/livros/{{ $livro->id }}" method="POST">
+  <a class="btn btn-outline-secondary btn-action" href="/cursos/editar/{{ $curso->id }}">Editar</a>
+  <form action="/cursos/{{ $curso->id }}" method="POST">
     @csrf
     @method('DELETE')
     <button type="submit" class="btn btn-outline-secondary btn-action">Excluir</button>
@@ -17,19 +17,21 @@
 
   <div class="row show-content">
     <div class="col-4">
-      <img src="/images/{{ $livro->image }}" class="image" alt="{{ $livro->titulo }}">
+      <img src="/images/{{ $curso->image }}" class="image" alt="{{ $curso->nome }}">
     </div>
 
     <div class="col-8">
-      <h2 class="title">{{ $livro->titulo}}</h2>
+      <h2 class="title">{{ $curso->nome}}</h2>
       <p>3.000 avaliações</p>
 
       <div class="content">
-        <p>{{$livro->descricao}}</p>
-        <a href="{{$livro->linkCompra}}">COMPRE AQUI</a>
+        <p>{{$curso->descricao}}</p>
+        <a href="{{$curso->linkCurso}}">Acesse o curso aqui</a>
       </div>
     </div>
-    <!-- Avaliação -->
+  </div>
+</div>
+<!-- Avaliação -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <div class="estrelas">
   <p>Avalie este livro:</p>
@@ -50,9 +52,6 @@
   <input type="text" class="form-control" placeholder="Digite seu comentário" aria-label="Digite seu comentário" aria-describedby="button-addon2">
   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Salvar</button>
 </div>
-  </div>
-</div>
-
 
 <p>Avaliações</p>
 

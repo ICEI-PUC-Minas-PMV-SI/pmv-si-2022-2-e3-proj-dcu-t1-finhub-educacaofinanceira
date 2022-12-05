@@ -57,3 +57,7 @@ nav {
 .estrelas input[type=radio]:checked ~ label i.fa:before {
   color: #CCC;
 }
+
+.titulo-pag {
+  text-align: center;
+}
