@@ -24,16 +24,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Cursos</a>
+              <a class="nav-link" href="/cursos">Cursos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Influenciadores</a>
+              <a class="nav-link" href="/influencers">Influenciadores</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/livros">Livros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Podcast</a>
+              <a class="nav-link" href="/podcasts">Podcast</a>
             </li>
           </ul>
         </div>

@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h1>Atualizar Livros </h1>
+<h1 class="titulo-pag">Atualizar Livros </h1>
 
 <form action="/livros/editar/{{ $livro->id }}" method="POST" class="row g-3" enctype="multipart/form-data">
     @csrf
