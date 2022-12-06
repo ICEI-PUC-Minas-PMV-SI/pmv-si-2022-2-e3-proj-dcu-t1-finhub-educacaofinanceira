@@ -36,7 +36,7 @@ class PodcastsController extends Controller
 
         }
 
-        $livro->save();
+        $podcast->save();
         return redirect('/podcasts')->with('msg', 'Podcast cadastrado com sucesso!'); // colocar falsh messagem na página de criar
     }
 

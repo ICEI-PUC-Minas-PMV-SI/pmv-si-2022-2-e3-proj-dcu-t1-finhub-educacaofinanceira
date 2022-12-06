@@ -26,7 +26,7 @@
 
       <div class="content">
         <p>{{$podcast->descricao}}</p>
-        <a href="{{$livro->linkPodcast}}">Acesse aqui</a>
+        <a href="{{$podcast->linkPodcast}}">Acesse aqui</a>
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@
 <!-- Avaliação -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <div class="estrelas">
-  <p>Avalie este livro:</p>
+  <p>Avalie este podcast:</p>
   <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
   <label for="cm_star-1"><i class="fa"></i></label>
   <input type="radio" id="cm_star-1" name="fb" value="1"/>

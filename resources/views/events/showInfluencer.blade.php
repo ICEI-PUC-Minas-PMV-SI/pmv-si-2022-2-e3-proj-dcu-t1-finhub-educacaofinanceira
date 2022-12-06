@@ -26,7 +26,7 @@
 
       <div class="content">
         <p>{{$influencer->descricao}}</p>
-        <a href="{{$livro->linkCompra}}">COMPRE AQUI</a>
+        <a href="{{$influencer->linkCompra}}">COMPRE AQUI</a>
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@
 <!-- Avaliação -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <div class="estrelas">
-  <p>Avalie este livro:</p>
+  <p>Avalie este influencer:</p>
   <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
   <label for="cm_star-1"><i class="fa"></i></label>
   <input type="radio" id="cm_star-1" name="fb" value="1"/>

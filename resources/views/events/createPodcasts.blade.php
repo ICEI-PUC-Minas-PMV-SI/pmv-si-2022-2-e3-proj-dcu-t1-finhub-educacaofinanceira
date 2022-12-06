@@ -1,12 +1,12 @@
 @extends('layouts.main')
 
-@section('title', 'Livros')
+@section('title', 'Podcasts')
 
 @section('content')
 <br>
 <h1 class="titulo-pag">Cadastrar Podcasts </h1>
 <br>
-<form action="/livros/cadastrar" method="POST" class="row g-3" enctype="multipart/form-data">
+<form action="/podcasts/cadastrar" method="POST" class="row g-3" enctype="multipart/form-data">
     @csrf
   <div class="col-md-12">
     <label for="inputNome" class="form-label">Nome: <em style="color:red;"> <em style="color:red;">*</em></em></label>
