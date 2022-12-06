@@ -42,7 +42,7 @@ class PodcastsController extends Controller
 
     public function show($id)
     {
-        $podcast = Podcast::findOrFail($id);
+        $podcast = Podcasts::findOrFail($id);
         return view('events.showPodcast', ['podcast' => $podcast]);
     }
 
@@ -54,7 +54,7 @@ class PodcastsController extends Controller
 
     public function update(Request $request)
     {
-        Podcast::findOrFail($request->id)->update($request->all());
+        Podcasts::findOrFail($request->id)->update($request->all());
 
         return redirect('/podcasts');
     }

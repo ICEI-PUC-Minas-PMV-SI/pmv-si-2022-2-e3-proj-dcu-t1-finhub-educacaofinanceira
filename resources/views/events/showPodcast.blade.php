@@ -6,7 +6,7 @@
 <div class="container-show">
 
   <a class="btn btn-outline-secondary btn-action" href="/podcasts/editar/{{ $podcast->id }}">Editar</a>
-  <form action="/podcasts/{{ $livro->id }}" method="POST">
+  <form action="/podcasts/{{ $podcast->id }}" method="POST">
     @csrf
     @method('DELETE')
     <button type="submit" class="btn btn-outline-secondary btn-action">Excluir</button>
@@ -17,7 +17,7 @@
 
   <div class="row show-content">
     <div class="col-4">
-      <img src="/images/{{ $podcast->image }}" class="image" alt="{{ $podcas->nome }}">
+      <img src="/images/{{ $podcast->image }}" class="image" alt="{{ $podcast->nome }}">
     </div>
 
     <div class="col-8">
