@@ -18,7 +18,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ $livro -> titulo }}</h5>
         <p class="card-text">{{ $livro -> descricao }}</p>
-        <a class="btn btn-outline-secondary" href="/livros/{{ $livro -> id }}">Saiba Mais</a>
+        <a class="btn btn-outline-secondary d-flex justify-content-center" href="/livros/{{ $livro -> id }}">Saiba Mais</a>
       </div>
     </div>
   </div>

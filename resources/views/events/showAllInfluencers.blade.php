@@ -18,7 +18,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ $influencer -> nome }}</h5>
         <p class="card-text">{{ $influencer -> descricao }}</p>
-        <a class="btn btn-outline-secondary" href="/influencers/{{ $influencer -> id }}">Saiba Mais</a>
+        <a class="btn btn-outline-secondary d-flex justify-content-center" href="/influencers/{{ $influencer -> id }}">Saiba Mais</a>
       </div>
     </div>
   </div>
