@@ -26,7 +26,7 @@
 
       <div class="content">
         <p>{{$influencer->descricao}}</p>
-        <a href="{{$influencer->linkCompra}}">COMPRE AQUI</a>
+        <a href="{{$influencer->linkSite}}">Acesse AQUI</a>
       </div>
     </div>
   </div>
